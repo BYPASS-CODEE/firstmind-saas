@@ -91,9 +91,14 @@ class ApiClient {
     try {
       const controller = new AbortController();
       const timeout = setTimeout(() => controller.abort(), 3000);
-      await fetch('/api/health', { signal: controller.signal });
+      const resp = await fetch('/api/health', { signal: controller.signal });
       clearTimeout(timeout);
-      this.demoMode = false;
+      const ct = resp.headers.get('content-type') || '';
+      if (!ct.includes('application/json')) {
+        this.demoMode = true;
+      } else {
+        this.demoMode = false;
+      }
     } catch {
       this.demoMode = true;
     }
@@ -116,16 +121,23 @@ class ApiClient {
       headers['Authorization'] = `Bearer ${this.token}`;
     }
 
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), 8000);
+
     const response = await fetch(endpoint, {
       ...options,
-      headers
+      headers,
+      signal: controller.signal
     });
+    clearTimeout(timeout);
 
     let data: any;
     try {
-      data = await response.json();
+      const text = await response.text();
+      data = JSON.parse(text);
     } catch {
-      throw new ApiError('Failed to parse response from server', 'PARSE_ERROR');
+      this.demoMode = true;
+      throw new ApiError('Server unavailable (demo mode)', 'DEMO_MODE');
     }
 
     if (!response.ok || data.success === false) {
