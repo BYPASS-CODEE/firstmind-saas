@@ -1,0 +1,733 @@
+{
+  "users": [
+    {
+      "id": "usr_admin_001",
+      "email": "admin@firstmind.ai",
+      "passwordHash": "54962c6c69485e2ddc50458fe2b603af:2fb1e615d7e9716b2d390a0be1cac211880e552ce741efb17225c12d598e262937471e14c805e0a0d6099b46fc4f33d237df53111eae82d2e44805aee346e9e1",
+      "name": "FirstMind Administrator",
+      "role": "ADMIN",
+      "status": "ACTIVE",
+      "isEmailVerified": true,
+      "timezone": "UTC",
+      "language": "en",
+      "referralCode": "FIRSTMIND-ADM",
+      "createdAt": "2026-09-14T11:24:37.482Z",
+      "updatedAt": "2026-09-14T11:24:37.482Z"
+    },
+    {
+      "id": "usr_65f64436-56f1-4a7e-b163-54823cd8fee2",
+      "email": "alex@example.com",
+      "passwordHash": "1f2c7c451dcd84e1b8f21d9b62ff8d91:944c82019643638afc2969a9de7efa075ce0093841c15e4096cd7531aa60c03888abe0abde5d4b42df19e63d0617a2af5ee479f30a2a3a55459afcde23079493",
+      "name": "Alex Creator",
+      "role": "USER",
+      "status": "ACTIVE",
+      "isEmailVerified": true,
+      "timezone": "UTC",
+      "language": "en",
+      "referralCode": "FM-D006E006",
+      "referredBy": "usr_admin_001",
+      "createdAt": "2026-09-14T11:36:41.565Z",
+      "updatedAt": "2026-09-14T11:36:41.565Z"
+    },
+    {
+      "id": "usr_e74bf54b-3473-4acd-b16c-8672c344c369",
+      "email": "hojjatheshmaty0@gmail.com",
+      "passwordHash": "be91ec45a1f295c6c13b45239d141d39:fdd63ea5a6b7c5e6a3ff5ab649b091db4dec9e30b849e146e2c1638f706abb348f76518e67c64123218f7b3e91da8da0e34133fd75d0b621ffcc6339b14da76a",
+      "name": "مدرس کارگاه امنیت",
+      "role": "USER",
+      "status": "ACTIVE",
+      "isEmailVerified": true,
+      "timezone": "UTC",
+      "language": "en",
+      "referralCode": "FM-37B58F92",
+      "createdAt": "2026-09-14T11:44:16.743Z",
+      "updatedAt": "2026-09-14T11:44:16.743Z"
+    },
+    {
+      "id": "usr_dev_test",
+      "email": "dev-tester@firstmind.local",
+      "passwordHash": "DEV_TEST_ONLY_AUTH",
+      "name": "Development Tester",
+      "role": "USER",
+      "status": "ACTIVE",
+      "isEmailVerified": true,
+      "timezone": "UTC",
+      "language": "en",
+      "referralCode": "FM-DEVTEST",
+      "createdAt": "2026-09-14T11:58:40.652Z",
+      "updatedAt": "2026-09-14T11:58:40.652Z"
+    }
+  ],
+  "sessions": [
+    {
+      "id": "sess_06d78f89-320a-43ee-a5b9-33a39e41b85c",
+      "userId": "usr_admin_001",
+      "token": "6436dd9f9fe33ac6c236b361db4a2aff08c0be45fa80c985653f8f7528e0e991",
+      "ipAddress": "127.0.0.1",
+      "userAgent": "curl/7.88.1",
+      "expiresAt": "2026-10-14T11:36:37.776Z",
+      "createdAt": "2026-09-14T11:36:37.776Z"
+    },
+    {
+      "id": "sess_31afe5ed-2ea7-4e4b-a565-a1990c8bd0aa",
+      "userId": "usr_65f64436-56f1-4a7e-b163-54823cd8fee2",
+      "token": "80d64fc934ee4225f4cd6fe5debd99b18b7c0cd010afe6ac67b287f7e2ce6ca2",
+      "ipAddress": "127.0.0.1",
+      "userAgent": "curl/7.88.1",
+      "expiresAt": "2026-10-14T11:36:41.565Z",
+      "createdAt": "2026-09-14T11:36:41.565Z"
+    },
+    {
+      "id": "sess_ed2ba890-0bb4-4c2e-802c-074d0d796395",
+      "userId": "usr_admin_001",
+      "token": "7d0a0004f6d392bb123fcd434b346183e7bbc0ff468d4b4923005472594266ca",
+      "ipAddress": "51.158.254.160, 169.254.169.126",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36",
+      "expiresAt": "2026-10-14T11:43:48.619Z",
+      "createdAt": "2026-09-14T11:43:48.620Z"
+    },
+    {
+      "id": "sess_ba7249be-f56a-47ca-990b-35786c84051a",
+      "userId": "usr_admin_001",
+      "token": "3794f26606cb883a071f82ea5c3740c9474a22f3cdb506ac3a51437c065f730a",
+      "ipAddress": "51.158.254.160, 169.254.169.126",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36",
+      "expiresAt": "2026-10-14T11:43:53.749Z",
+      "createdAt": "2026-09-14T11:43:53.749Z"
+    },
+    {
+      "id": "sess_cbc68407-3c65-4401-98a7-8f25f5cf4b61",
+      "userId": "usr_e74bf54b-3473-4acd-b16c-8672c344c369",
+      "token": "6c1bf7af9d245d6888234de15b0260739199579b7ec3dec8d729c602b0d1afa1",
+      "ipAddress": "51.158.254.160, 169.254.169.126",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36",
+      "expiresAt": "2026-10-14T11:44:16.744Z",
+      "createdAt": "2026-09-14T11:44:16.744Z"
+    },
+    {
+      "id": "sess_6d3eeb36-b583-4fad-9316-01099c26b6e1",
+      "userId": "usr_dev_test",
+      "token": "bcd8ca59f3f049111c12df27d80a6bc68db4455e65f41ba463055fd04cb684b4",
+      "ipAddress": "127.0.0.1",
+      "userAgent": "curl/7.88.1",
+      "expiresAt": "2026-10-14T11:58:40.653Z",
+      "createdAt": "2026-09-14T11:58:40.653Z"
+    },
+    {
+      "id": "sess_eec25f97-985e-4835-bca5-f8b8c8fc7fb6",
+      "userId": "usr_dev_test",
+      "token": "9472fa17f95f946d6dafa96832514a7842da44c48d342a3f16c1350623e83750",
+      "ipAddress": "127.0.0.1",
+      "userAgent": "curl/7.88.1",
+      "expiresAt": "2026-10-14T11:58:42.472Z",
+      "createdAt": "2026-09-14T11:58:42.472Z"
+    },
+    {
+      "id": "sess_5842b0dd-45db-4499-934d-b04c5ea306fa",
+      "userId": "usr_dev_test",
+      "token": "a33d661effa810429ad8bff581440b95ad4327dc0d33dcffdd9d2301e9a2b21b",
+      "ipAddress": "127.0.0.1",
+      "userAgent": "curl/7.88.1",
+      "expiresAt": "2026-10-14T11:59:04.774Z",
+      "createdAt": "2026-09-14T11:59:04.775Z"
+    },
+    {
+      "id": "sess_a3c46513-a3e1-4335-bc6a-576801088b80",
+      "userId": "usr_dev_test",
+      "token": "d0424abeaa0a555aa9e56b5d1c8fd48a2bd7dcbf5bfc919d1b0ae49f927be1c0",
+      "ipAddress": "127.0.0.1",
+      "userAgent": "curl/7.88.1",
+      "expiresAt": "2026-10-14T11:59:11.523Z",
+      "createdAt": "2026-09-14T11:59:11.523Z"
+    },
+    {
+      "id": "sess_b2226a05-4986-4371-8a8f-81563a0100d8",
+      "userId": "usr_dev_test",
+      "token": "663bf4e7ac9abc70568ad881d94125b60d059bed7568a88ea7c4238f92b13fb7",
+      "ipAddress": "127.0.0.1",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36",
+      "expiresAt": "2026-10-14T14:11:54.672Z",
+      "createdAt": "2026-09-14T14:11:54.672Z"
+    }
+  ],
+  "subscriptionPlans": [
+    {
+      "id": "plan_starter",
+      "name": "Starter",
+      "tier": "STARTER",
+      "priceMonthly": 10,
+      "currency": "USD",
+      "creditLimit": 100,
+      "allowedTools": [
+        "TEXT_TO_IMAGE",
+        "IMAGE_TO_IMAGE",
+        "VARIATION"
+      ],
+      "maxQuality": "1K",
+      "processingPriority": "STANDARD",
+      "isActive": true,
+      "description": "Essential creative toolset for hobbyists and individual experimenters.",
+      "features": [
+        "100 monthly generation credits",
+        "Text-to-Image & Image-to-Image creation",
+        "Standard processing queue",
+        "Commercial usage rights",
+        "Community support",
+        "PNG / JPG asset downloads"
+      ]
+    },
+    {
+      "id": "plan_pro",
+      "name": "Pro",
+      "tier": "PRO",
+      "priceMonthly": 50,
+      "currency": "USD",
+      "creditLimit": 600,
+      "allowedTools": [
+        "TEXT_TO_IMAGE",
+        "IMAGE_TO_IMAGE",
+        "VARIATION",
+        "ENHANCE",
+        "STYLE_TRANSFER",
+        "TEXT_TO_VIDEO",
+        "IMAGE_TO_VIDEO"
+      ],
+      "maxQuality": "2K",
+      "processingPriority": "HIGH",
+      "isActive": true,
+      "description": "High-throughput studio suite for design professionals and creative agencies.",
+      "features": [
+        "600 monthly generation credits",
+        "All Image Tools + Text & Image-to-Video",
+        "High-priority generation queue",
+        "High-resolution up to 2K",
+        "Full generation history & export",
+        "Priority email & ticket support"
+      ]
+    },
+    {
+      "id": "plan_elite",
+      "name": "Elite",
+      "tier": "ELITE",
+      "priceMonthly": 99,
+      "currency": "USD",
+      "creditLimit": 1500,
+      "allowedTools": [
+        "TEXT_TO_IMAGE",
+        "IMAGE_TO_IMAGE",
+        "VARIATION",
+        "ENHANCE",
+        "STYLE_TRANSFER",
+        "TEXT_TO_VIDEO",
+        "IMAGE_TO_VIDEO"
+      ],
+      "maxQuality": "4K",
+      "processingPriority": "ULTRA",
+      "isActive": true,
+      "description": "Maximum generation capacity with ultra-priority execution and 4K outputs.",
+      "features": [
+        "1,500 monthly generation credits",
+        "Ultra-priority queue execution",
+        "Ultra-high fidelity up to 4K",
+        "Uncapped batch concurrency",
+        "Dedicated account management",
+        "Custom style model fine-tuning"
+      ]
+    }
+  ],
+  "subscriptions": [
+    {
+      "id": "sub_d35ccdb7-af80-424d-b184-281ca8eb82e5",
+      "userId": "usr_65f64436-56f1-4a7e-b163-54823cd8fee2",
+      "planId": "plan_starter",
+      "status": "ACTIVE",
+      "creditsTotal": 100,
+      "creditsUsed": 0,
+      "currentPeriodStart": "2026-09-14T11:36:56.068Z",
+      "currentPeriodEnd": "2026-10-14T11:36:56.068Z",
+      "autoRenew": true,
+      "createdAt": "2026-09-14T11:36:56.068Z",
+      "updatedAt": "2026-09-14T11:36:56.068Z"
+    }
+  ],
+  "payments": [
+    {
+      "id": "pay_8f5f65dd-a0fc-4d22-9a93-44e4c677dd94",
+      "userId": "usr_65f64436-56f1-4a7e-b163-54823cd8fee2",
+      "planId": "plan_starter",
+      "amount": 10,
+      "currency": "USD",
+      "provider": "STRIPE",
+      "status": "SUCCESS",
+      "transactionReference": "TXN-1789385810968-11EC03DA",
+      "idempotencyKey": "idem_86043792-ee79-48d0-9c97-461193ea1da5",
+      "metadata": {
+        "userIp": "127.0.0.1",
+        "planName": "Starter",
+        "creditLimit": 100
+      },
+      "createdAt": "2026-09-14T11:36:50.968Z",
+      "providerTransactionId": "prov_bc4544c1-4d3f-4060-ac50-6234a9bd6340",
+      "verifiedAt": "2026-09-14T11:36:56.068Z",
+      "subscriptionId": "sub_d35ccdb7-af80-424d-b184-281ca8eb82e5"
+    }
+  ],
+  "invoices": [
+    {
+      "id": "inv_360f7ae9-75da-4067-85b8-4433fb536807",
+      "paymentId": "pay_8f5f65dd-a0fc-4d22-9a93-44e4c677dd94",
+      "userId": "usr_65f64436-56f1-4a7e-b163-54823cd8fee2",
+      "invoiceNumber": "INV-202609-010396",
+      "amount": 10,
+      "currency": "USD",
+      "planName": "Starter",
+      "issuedAt": "2026-09-14T11:36:56.068Z",
+      "paidAt": "2026-09-14T11:36:56.068Z"
+    }
+  ],
+  "aiTools": [
+    {
+      "id": "tool_text_to_image",
+      "key": "TEXT_TO_IMAGE",
+      "name": "Text to Image",
+      "type": "IMAGE",
+      "creditCost": 2,
+      "isEnabled": true,
+      "provider": "Gemini 3.1 Flash Image",
+      "description": "Generate hyper-detailed digital art, concept design, and photo-realism from natural language prompts.",
+      "supportedRatios": [
+        "1:1",
+        "16:9",
+        "9:16",
+        "4:3",
+        "3:4"
+      ],
+      "supportedResolutions": [
+        "1K",
+        "2K"
+      ]
+    },
+    {
+      "id": "tool_image_to_image",
+      "key": "IMAGE_TO_IMAGE",
+      "name": "Image to Image",
+      "type": "IMAGE",
+      "creditCost": 3,
+      "isEnabled": true,
+      "provider": "Gemini 3.1 Flash Image",
+      "description": "Guide prompt-driven image evolution using an uploaded reference asset with adjustable guidance strength.",
+      "supportedRatios": [
+        "1:1",
+        "16:9",
+        "9:16"
+      ],
+      "supportedResolutions": [
+        "1K",
+        "2K"
+      ]
+    },
+    {
+      "id": "tool_variation",
+      "key": "VARIATION",
+      "name": "Variation Engine",
+      "type": "IMAGE",
+      "creditCost": 2,
+      "isEnabled": true,
+      "provider": "Gemini 3.1 Flash Image",
+      "description": "Explore compositional and conceptual variations of an existing image asset.",
+      "supportedRatios": [
+        "1:1"
+      ],
+      "supportedResolutions": [
+        "1K"
+      ]
+    },
+    {
+      "id": "tool_enhance",
+      "key": "ENHANCE",
+      "name": "Enhance & Upscale",
+      "type": "IMAGE",
+      "creditCost": 4,
+      "isEnabled": true,
+      "provider": "Gemini Neural Upscaler",
+      "description": "Enhance fine micro-textures, clean noise artifacts, and upscale raster resolution.",
+      "supportedRatios": [
+        "Original"
+      ],
+      "supportedResolutions": [
+        "2K",
+        "4K"
+      ]
+    },
+    {
+      "id": "tool_style_transfer",
+      "key": "STYLE_TRANSFER",
+      "name": "Style Transfer",
+      "type": "IMAGE",
+      "creditCost": 3,
+      "isEnabled": true,
+      "provider": "Gemini Style Engine",
+      "description": "Transfer artistic styles, color palettes, and cinematic textures onto your source images.",
+      "supportedRatios": [
+        "1:1",
+        "16:9"
+      ],
+      "supportedResolutions": [
+        "1K",
+        "2K"
+      ]
+    },
+    {
+      "id": "tool_text_to_video",
+      "key": "TEXT_TO_VIDEO",
+      "name": "Text to Video",
+      "type": "VIDEO",
+      "creditCost": 15,
+      "isEnabled": true,
+      "provider": "Veo 3.1 Video Engine",
+      "description": "Synthesize coherent 6-15s cinematic motion clips directly from written scene descriptions.",
+      "supportedRatios": [
+        "16:9",
+        "9:16"
+      ],
+      "supportedResolutions": [
+        "720p",
+        "1080p"
+      ]
+    },
+    {
+      "id": "tool_image_to_video",
+      "key": "IMAGE_TO_VIDEO",
+      "name": "Image to Video",
+      "type": "VIDEO",
+      "creditCost": 18,
+      "isEnabled": true,
+      "provider": "Veo 3.1 Video Engine",
+      "description": "Animate static illustrations and photos into seamless, temporal video sequences.",
+      "supportedRatios": [
+        "16:9",
+        "9:16"
+      ],
+      "supportedResolutions": [
+        "720p",
+        "1080p"
+      ]
+    }
+  ],
+  "generationJobs": [
+    {
+      "id": "gen_a14f9b4f-4cee-43dc-ba82-42ad4fc5054b",
+      "userId": "usr_dev_test",
+      "tool": "TEXT_TO_IMAGE",
+      "provider": "Gemini 3.1 Flash Image",
+      "status": "FAILED",
+      "inputMetadata": {
+        "prompt": "A minimalist zen stone garden with ripples in fine sand, soft morning lighting",
+        "aspectRatio": "1:1"
+      },
+      "usageCost": 0,
+      "retryCount": 0,
+      "createdAt": "2026-09-14T11:59:11.535Z",
+      "startedAt": "2026-09-14T11:59:11.535Z",
+      "failedAt": "2026-09-14T11:59:11.637Z",
+      "errorCode": "QUOTA_EXCEEDED",
+      "errorMessage": "Gemini API quota has been reached. Please try again later."
+    },
+    {
+      "id": "gen_bdbc5c64-b9fa-43ef-b389-1f68e3cf1f56",
+      "userId": "usr_65f64436-56f1-4a7e-b163-54823cd8fee2",
+      "tool": "TEXT_TO_IMAGE",
+      "provider": "Gemini 3.1 Flash Image",
+      "status": "FAILED",
+      "inputMetadata": {
+        "prompt": "Minimalist architectural concrete structure",
+        "aspectRatio": "1:1",
+        "resolution": "2K"
+      },
+      "usageCost": 2,
+      "retryCount": 0,
+      "createdAt": "2026-09-14T11:37:23.830Z",
+      "startedAt": "2026-09-14T11:37:23.830Z",
+      "failedAt": "2026-09-14T11:37:23.945Z",
+      "errorCode": "AI_PROVIDER_ERROR",
+      "errorMessage": "{\"error\":{\"code\":429,\"message\":\"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-3.1-flash-image\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-3.1-flash-image\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-3.1-flash-image\\nPlease retry in 36.070742884s.\",\"status\":\"RESOURCE_EXHAUSTED\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.Help\",\"links\":[{\"description\":\"Learn more about Gemini API quotas\",\"url\":\"https://ai.google.dev/gemini-api/docs/rate-limits\"}]},{\"@type\":\"type.googleapis.com/google.rpc.QuotaFailure\",\"violations\":[{\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\"quotaId\":\"GenerateRequestsPerDayPerProjectPerModel-FreeTier\",\"quotaDimensions\":{\"location\":\"global\",\"model\":\"gemini-3.1-flash-image\"}},{\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\"quotaId\":\"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\",\"quotaDimensions\":{\"model\":\"gemini-3.1-flash-image\",\"location\":\"global\"}},{\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_input_token_count\",\"quotaId\":\"GenerateContentInputTokensPerModelPerMinute-FreeTier\",\"quotaDimensions\":{\"location\":\"global\",\"model\":\"gemini-3.1-flash-image\"}}]},{\"@type\":\"type.googleapis.com/google.rpc.RetryInfo\",\"retryDelay\":\"36s\"}]}}"
+    },
+    {
+      "id": "gen_d8d9d611-f240-4144-92fe-85ec2ff9e2ce",
+      "userId": "usr_65f64436-56f1-4a7e-b163-54823cd8fee2",
+      "tool": "TEXT_TO_IMAGE",
+      "provider": "Gemini 3.1 Flash Image",
+      "status": "FAILED",
+      "inputMetadata": {
+        "prompt": "Minimalist architectural concrete structure in soft daylight",
+        "aspectRatio": "1:1",
+        "resolution": "1K"
+      },
+      "usageCost": 2,
+      "retryCount": 0,
+      "createdAt": "2026-09-14T11:37:10.850Z",
+      "startedAt": "2026-09-14T11:37:10.850Z",
+      "failedAt": "2026-09-14T11:37:10.995Z",
+      "errorCode": "AI_PROVIDER_ERROR",
+      "errorMessage": "{\"error\":{\"code\":429,\"message\":\"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-3.1-flash-lite-image\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-3.1-flash-lite-image\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-3.1-flash-lite-image\\nPlease retry in 49.026233537s.\",\"status\":\"RESOURCE_EXHAUSTED\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.Help\",\"links\":[{\"description\":\"Learn more about Gemini API quotas\",\"url\":\"https://ai.google.dev/gemini-api/docs/rate-limits\"}]},{\"@type\":\"type.googleapis.com/google.rpc.QuotaFailure\",\"violations\":[{\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_input_token_count\",\"quotaId\":\"GenerateContentInputTokensPerModelPerMinute-FreeTier\",\"quotaDimensions\":{\"location\":\"global\",\"model\":\"gemini-3.1-flash-lite-image\"}},{\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\"quotaId\":\"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\",\"quotaDimensions\":{\"model\":\"gemini-3.1-flash-lite-image\",\"location\":\"global\"}},{\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\"quotaId\":\"GenerateRequestsPerDayPerProjectPerModel-FreeTier\",\"quotaDimensions\":{\"model\":\"gemini-3.1-flash-lite-image\",\"location\":\"global\"}}]},{\"@type\":\"type.googleapis.com/google.rpc.RetryInfo\",\"retryDelay\":\"49s\"}]}}"
+    }
+  ],
+  "usageLedger": [
+    {
+      "id": "usg_faab4ee9-dd3d-455c-9698-2dbabd81afb1",
+      "userId": "usr_65f64436-56f1-4a7e-b163-54823cd8fee2",
+      "jobId": "gen_d8d9d611-f240-4144-92fe-85ec2ff9e2ce",
+      "tool": "TEXT_TO_IMAGE",
+      "amountConsumed": 2,
+      "balanceBefore": 100,
+      "balanceAfter": 98,
+      "status": "REFUNDED",
+      "timestamp": "2026-09-14T11:37:10.850Z",
+      "subscriptionId": "sub_d35ccdb7-af80-424d-b184-281ca8eb82e5"
+    },
+    {
+      "id": "usg_9d378ae8-c0b1-4f96-9ae1-a6598c2db095",
+      "userId": "usr_65f64436-56f1-4a7e-b163-54823cd8fee2",
+      "jobId": "gen_bdbc5c64-b9fa-43ef-b389-1f68e3cf1f56",
+      "tool": "TEXT_TO_IMAGE",
+      "amountConsumed": 2,
+      "balanceBefore": 100,
+      "balanceAfter": 98,
+      "status": "REFUNDED",
+      "timestamp": "2026-09-14T11:37:23.830Z",
+      "subscriptionId": "sub_d35ccdb7-af80-424d-b184-281ca8eb82e5"
+    }
+  ],
+  "referrals": [
+    {
+      "id": "ref_ba34c89b-8139-4bf9-9e16-9421e38953a9",
+      "referrerUserId": "usr_admin_001",
+      "referredUserId": "usr_65f64436-56f1-4a7e-b163-54823cd8fee2",
+      "referralCode": "FIRSTMIND-ADM",
+      "status": "COMMISSIONED",
+      "commissionAmount": 1,
+      "currency": "USD",
+      "createdAt": "2026-09-14T11:36:41.565Z",
+      "qualifyingPaymentId": "pay_8f5f65dd-a0fc-4d22-9a93-44e4c677dd94",
+      "qualifiedAt": "2026-09-14T11:36:56.068Z"
+    }
+  ],
+  "referralLedger": [
+    {
+      "id": "refled_58e46165-5183-490b-b006-18fb84b898fa",
+      "referrerUserId": "usr_admin_001",
+      "referralRecordId": "ref_ba34c89b-8139-4bf9-9e16-9421e38953a9",
+      "paymentId": "pay_8f5f65dd-a0fc-4d22-9a93-44e4c677dd94",
+      "amount": 1,
+      "currency": "USD",
+      "status": "APPROVED",
+      "createdAt": "2026-09-14T11:36:56.068Z"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "notif_f30b9b71-7d66-44dc-9b2a-9197697f52e0",
+      "userId": "usr_dev_test",
+      "type": "GENERATION_FAILED",
+      "title": "Generation Failed",
+      "message": "Your generation could not be completed: Gemini API quota has been reached. Please try again later..",
+      "isRead": false,
+      "data": {
+        "jobId": "gen_a14f9b4f-4cee-43dc-ba82-42ad4fc5054b",
+        "error": "Gemini API quota has been reached. Please try again later."
+      },
+      "createdAt": "2026-09-14T11:59:11.637Z"
+    },
+    {
+      "id": "notif_e0536119-ca49-48f0-913f-4b8db5922dd3",
+      "userId": "usr_65f64436-56f1-4a7e-b163-54823cd8fee2",
+      "type": "GENERATION_FAILED",
+      "title": "Generation Failed",
+      "message": "Your generation could not be completed: {\"error\":{\"code\":429,\"message\":\"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-3.1-flash-image\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-3.1-flash-image\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-3.1-flash-image\\nPlease retry in 36.070742884s.\",\"status\":\"RESOURCE_EXHAUSTED\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.Help\",\"links\":[{\"description\":\"Learn more about Gemini API quotas\",\"url\":\"https://ai.google.dev/gemini-api/docs/rate-limits\"}]},{\"@type\":\"type.googleapis.com/google.rpc.QuotaFailure\",\"violations\":[{\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\"quotaId\":\"GenerateRequestsPerDayPerProjectPerModel-FreeTier\",\"quotaDimensions\":{\"location\":\"global\",\"model\":\"gemini-3.1-flash-image\"}},{\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\"quotaId\":\"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\",\"quotaDimensions\":{\"model\":\"gemini-3.1-flash-image\",\"location\":\"global\"}},{\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_input_token_count\",\"quotaId\":\"GenerateContentInputTokensPerModelPerMinute-FreeTier\",\"quotaDimensions\":{\"location\":\"global\",\"model\":\"gemini-3.1-flash-image\"}}]},{\"@type\":\"type.googleapis.com/google.rpc.RetryInfo\",\"retryDelay\":\"36s\"}]}}. Credits have been refunded to your balance.",
+      "isRead": false,
+      "data": {
+        "jobId": "gen_bdbc5c64-b9fa-43ef-b389-1f68e3cf1f56",
+        "error": "{\"error\":{\"code\":429,\"message\":\"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-3.1-flash-image\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-3.1-flash-image\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-3.1-flash-image\\nPlease retry in 36.070742884s.\",\"status\":\"RESOURCE_EXHAUSTED\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.Help\",\"links\":[{\"description\":\"Learn more about Gemini API quotas\",\"url\":\"https://ai.google.dev/gemini-api/docs/rate-limits\"}]},{\"@type\":\"type.googleapis.com/google.rpc.QuotaFailure\",\"violations\":[{\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\"quotaId\":\"GenerateRequestsPerDayPerProjectPerModel-FreeTier\",\"quotaDimensions\":{\"location\":\"global\",\"model\":\"gemini-3.1-flash-image\"}},{\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\"quotaId\":\"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\",\"quotaDimensions\":{\"model\":\"gemini-3.1-flash-image\",\"location\":\"global\"}},{\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_input_token_count\",\"quotaId\":\"GenerateContentInputTokensPerModelPerMinute-FreeTier\",\"quotaDimensions\":{\"location\":\"global\",\"model\":\"gemini-3.1-flash-image\"}}]},{\"@type\":\"type.googleapis.com/google.rpc.RetryInfo\",\"retryDelay\":\"36s\"}]}}"
+      },
+      "createdAt": "2026-09-14T11:37:23.945Z"
+    },
+    {
+      "id": "notif_d2619e00-f6dc-41a3-8d12-442a44fbab04",
+      "userId": "usr_65f64436-56f1-4a7e-b163-54823cd8fee2",
+      "type": "GENERATION_FAILED",
+      "title": "Generation Failed",
+      "message": "Your generation could not be completed: {\"error\":{\"code\":429,\"message\":\"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-3.1-flash-lite-image\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-3.1-flash-lite-image\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-3.1-flash-lite-image\\nPlease retry in 49.026233537s.\",\"status\":\"RESOURCE_EXHAUSTED\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.Help\",\"links\":[{\"description\":\"Learn more about Gemini API quotas\",\"url\":\"https://ai.google.dev/gemini-api/docs/rate-limits\"}]},{\"@type\":\"type.googleapis.com/google.rpc.QuotaFailure\",\"violations\":[{\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_input_token_count\",\"quotaId\":\"GenerateContentInputTokensPerModelPerMinute-FreeTier\",\"quotaDimensions\":{\"location\":\"global\",\"model\":\"gemini-3.1-flash-lite-image\"}},{\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\"quotaId\":\"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\",\"quotaDimensions\":{\"model\":\"gemini-3.1-flash-lite-image\",\"location\":\"global\"}},{\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\"quotaId\":\"GenerateRequestsPerDayPerProjectPerModel-FreeTier\",\"quotaDimensions\":{\"model\":\"gemini-3.1-flash-lite-image\",\"location\":\"global\"}}]},{\"@type\":\"type.googleapis.com/google.rpc.RetryInfo\",\"retryDelay\":\"49s\"}]}}. Credits have been refunded to your balance.",
+      "isRead": false,
+      "data": {
+        "jobId": "gen_d8d9d611-f240-4144-92fe-85ec2ff9e2ce",
+        "error": "{\"error\":{\"code\":429,\"message\":\"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-3.1-flash-lite-image\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-3.1-flash-lite-image\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-3.1-flash-lite-image\\nPlease retry in 49.026233537s.\",\"status\":\"RESOURCE_EXHAUSTED\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.Help\",\"links\":[{\"description\":\"Learn more about Gemini API quotas\",\"url\":\"https://ai.google.dev/gemini-api/docs/rate-limits\"}]},{\"@type\":\"type.googleapis.com/google.rpc.QuotaFailure\",\"violations\":[{\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_input_token_count\",\"quotaId\":\"GenerateContentInputTokensPerModelPerMinute-FreeTier\",\"quotaDimensions\":{\"location\":\"global\",\"model\":\"gemini-3.1-flash-lite-image\"}},{\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\"quotaId\":\"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\",\"quotaDimensions\":{\"model\":\"gemini-3.1-flash-lite-image\",\"location\":\"global\"}},{\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\"quotaId\":\"GenerateRequestsPerDayPerProjectPerModel-FreeTier\",\"quotaDimensions\":{\"model\":\"gemini-3.1-flash-lite-image\",\"location\":\"global\"}}]},{\"@type\":\"type.googleapis.com/google.rpc.RetryInfo\",\"retryDelay\":\"49s\"}]}}"
+      },
+      "createdAt": "2026-09-14T11:37:10.995Z"
+    },
+    {
+      "id": "notif_882ed53e-0a0b-480c-bd83-e29afd30700d",
+      "userId": "usr_65f64436-56f1-4a7e-b163-54823cd8fee2",
+      "type": "PAYMENT_SUCCESS",
+      "title": "Subscription Activated",
+      "message": "Your payment of $10.00 was verified. Starter subscription is now active with 100 generation credits!",
+      "isRead": false,
+      "data": {
+        "paymentId": "pay_8f5f65dd-a0fc-4d22-9a93-44e4c677dd94",
+        "planName": "Starter"
+      },
+      "createdAt": "2026-09-14T11:36:56.068Z"
+    },
+    {
+      "id": "notif_1632c125-fe14-456f-99f9-3c4b585a3ec5",
+      "userId": "usr_admin_001",
+      "type": "REFERRAL_COMMISSION",
+      "title": "Referral Commission Earned",
+      "message": "You earned a $1.00 referral commission from a qualifying subscription purchase!",
+      "isRead": false,
+      "data": {
+        "amount": 1,
+        "currency": "USD",
+        "referredUserId": "usr_65f64436-56f1-4a7e-b163-54823cd8fee2"
+      },
+      "createdAt": "2026-09-14T11:36:56.068Z"
+    },
+    {
+      "id": "notif_55749a5b-8f6d-4256-a35b-5cb978d5e7ea",
+      "userId": "usr_admin_001",
+      "type": "REFERRAL_COMMISSION",
+      "title": "New Referral Signup",
+      "message": "A new user registered using your referral code. You will earn $1.00 when they make their first qualifying purchase!",
+      "isRead": false,
+      "data": {
+        "referredUserId": "usr_65f64436-56f1-4a7e-b163-54823cd8fee2"
+      },
+      "createdAt": "2026-09-14T11:36:41.565Z"
+    }
+  ],
+  "auditLogs": [
+    {
+      "id": "audit_b0a75d1b-e53e-4650-b1f2-f842d28ff99a",
+      "actorId": "usr_e74bf54b-3473-4acd-b16c-8672c344c369",
+      "actorEmail": "hojjatheshmaty0@gmail.com",
+      "action": "USER_REGISTERED",
+      "entity": "USER",
+      "entityId": "usr_e74bf54b-3473-4acd-b16c-8672c344c369",
+      "ipAddress": "127.0.0.1",
+      "metadata": {
+        "referredBy": null
+      },
+      "timestamp": "2026-09-14T11:44:16.744Z"
+    },
+    {
+      "id": "audit_0f1eb995-a296-455e-b7dd-b669599a0405",
+      "actorId": "usr_admin_001",
+      "actorEmail": "admin@firstmind.ai",
+      "action": "USER_LOGGED_IN",
+      "entity": "USER",
+      "entityId": "usr_admin_001",
+      "ipAddress": "127.0.0.1",
+      "metadata": {},
+      "timestamp": "2026-09-14T11:43:53.750Z"
+    },
+    {
+      "id": "audit_7448cf41-241b-48be-b54e-4c793bfd30eb",
+      "actorId": "usr_admin_001",
+      "actorEmail": "admin@firstmind.ai",
+      "action": "USER_LOGGED_IN",
+      "entity": "USER",
+      "entityId": "usr_admin_001",
+      "ipAddress": "127.0.0.1",
+      "metadata": {},
+      "timestamp": "2026-09-14T11:43:48.620Z"
+    },
+    {
+      "id": "audit_26b67dfe-65d3-4f36-993c-c83b05674165",
+      "actorId": "usr_65f64436-56f1-4a7e-b163-54823cd8fee2",
+      "actorEmail": "alex@example.com",
+      "action": "PAYMENT_VERIFIED",
+      "entity": "PAYMENT",
+      "entityId": "pay_8f5f65dd-a0fc-4d22-9a93-44e4c677dd94",
+      "metadata": {
+        "amount": 10,
+        "subscriptionId": "sub_d35ccdb7-af80-424d-b184-281ca8eb82e5"
+      },
+      "timestamp": "2026-09-14T11:36:56.069Z"
+    },
+    {
+      "id": "audit_594faf36-b856-4fb3-aa3a-375e7d51d9ec",
+      "actorId": "system",
+      "actorEmail": "system@firstmind.ai",
+      "action": "REFERRAL_COMMISSION_GRANTED",
+      "entity": "REFERRAL_LEDGER",
+      "entityId": "refled_58e46165-5183-490b-b006-18fb84b898fa",
+      "metadata": {
+        "referrerId": "usr_admin_001",
+        "amount": 1,
+        "paymentId": "pay_8f5f65dd-a0fc-4d22-9a93-44e4c677dd94"
+      },
+      "timestamp": "2026-09-14T11:36:56.068Z"
+    },
+    {
+      "id": "audit_6e6e2016-079d-4f01-b3d1-405382a66e1e",
+      "actorId": "usr_65f64436-56f1-4a7e-b163-54823cd8fee2",
+      "actorEmail": "alex@example.com",
+      "action": "PAYMENT_INITIATED",
+      "entity": "PAYMENT",
+      "entityId": "pay_8f5f65dd-a0fc-4d22-9a93-44e4c677dd94",
+      "ipAddress": "127.0.0.1",
+      "metadata": {
+        "amount": 10,
+        "provider": "STRIPE",
+        "planId": "plan_starter"
+      },
+      "timestamp": "2026-09-14T11:36:50.969Z"
+    },
+    {
+      "id": "audit_7f537487-6336-4776-9c3f-fb5220c8080c",
+      "actorId": "usr_65f64436-56f1-4a7e-b163-54823cd8fee2",
+      "actorEmail": "alex@example.com",
+      "action": "USER_REGISTERED",
+      "entity": "USER",
+      "entityId": "usr_65f64436-56f1-4a7e-b163-54823cd8fee2",
+      "ipAddress": "127.0.0.1",
+      "metadata": {
+        "referredBy": "usr_admin_001"
+      },
+      "timestamp": "2026-09-14T11:36:41.565Z"
+    },
+    {
+      "id": "audit_4136051d-6f31-4b06-badb-3456c74e5383",
+      "actorId": "usr_admin_001",
+      "actorEmail": "admin@firstmind.ai",
+      "action": "USER_LOGGED_IN",
+      "entity": "USER",
+      "entityId": "usr_admin_001",
+      "ipAddress": "127.0.0.1",
+      "metadata": {},
+      "timestamp": "2026-09-14T11:36:37.776Z"
+    },
+    {
+      "id": "log_init",
+      "actorId": "system",
+      "actorEmail": "system@firstmind.ai",
+      "action": "SYSTEM_INITIALIZATION",
+      "entity": "SYSTEM",
+      "entityId": "root",
+      "metadata": {
+        "message": "Database initialized with zero fake records and real production schemas."
+      },
+      "timestamp": "2026-09-14T11:24:37.482Z"
+    }
+  ],
+  "settings": {
+    "platformName": "FIRSTMIND",
+    "maintenanceMode": false,
+    "allowRegistrations": true,
+    "defaultCurrency": "USD",
+    "referralCommissionAmount": 1,
+    "aiProviderConfigured": true,
+    "paymentGatewayConfigured": false,
+    "activeAiProvider": "Gemini GenAI",
+    "activePaymentGateway": "Multi-Gateway (Zarinpal/Crypto/Stripe)"
+  }
+}

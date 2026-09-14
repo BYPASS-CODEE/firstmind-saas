@@ -1,0 +1,6 @@
+{
+  "name": "FIRSTMIND",
+  "description": "Production-grade AI creative SaaS platform for AI-powered image and video generation, subscriptions, usage ledger, referrals, and admin operations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
