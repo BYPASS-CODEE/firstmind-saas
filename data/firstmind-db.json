@@ -141,13 +141,13 @@
       "createdAt": "2026-09-14T11:59:11.523Z"
     },
     {
-      "id": "sess_b2226a05-4986-4371-8a8f-81563a0100d8",
-      "userId": "usr_dev_test",
-      "token": "663bf4e7ac9abc70568ad881d94125b60d059bed7568a88ea7c4238f92b13fb7",
+      "id": "sess_8b43f08d-1623-4137-8341-956a40accd77",
+      "userId": "usr_65f64436-56f1-4a7e-b163-54823cd8fee2",
+      "token": "b7006249d19756b80f70ef1673f50ced7083f8601c7a70088b06101bbf69d1a9",
       "ipAddress": "127.0.0.1",
       "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36",
-      "expiresAt": "2026-10-14T14:11:54.672Z",
-      "createdAt": "2026-09-14T14:11:54.672Z"
+      "expiresAt": "2026-10-14T23:26:26.974Z",
+      "createdAt": "2026-09-14T23:26:26.974Z"
     }
   ],
   "subscriptionPlans": [
@@ -605,6 +605,28 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_6bde3af7-9b5b-4502-91e7-82b797390e51",
+      "actorId": "usr_65f64436-56f1-4a7e-b163-54823cd8fee2",
+      "actorEmail": "alex@example.com",
+      "action": "USER_LOGGED_IN",
+      "entity": "USER",
+      "entityId": "usr_65f64436-56f1-4a7e-b163-54823cd8fee2",
+      "ipAddress": "127.0.0.1",
+      "metadata": {},
+      "timestamp": "2026-09-14T23:26:26.976Z"
+    },
+    {
+      "id": "audit_050f84d7-b506-40c1-ba57-742e5915ccc7",
+      "actorId": "usr_dev_test",
+      "actorEmail": "dev-tester@firstmind.local",
+      "action": "USER_LOGGED_OUT",
+      "entity": "SESSION",
+      "entityId": "663bf4e7ac9abc70568ad881d94125b60d059bed7568a88ea7c4238f92b13fb7",
+      "ipAddress": "127.0.0.1",
+      "metadata": {},
+      "timestamp": "2026-09-14T23:25:41.101Z"
+    },
     {
       "id": "audit_b0a75d1b-e53e-4650-b1f2-f842d28ff99a",
       "actorId": "usr_e74bf54b-3473-4acd-b16c-8672c344c369",
