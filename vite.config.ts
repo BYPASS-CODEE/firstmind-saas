@@ -5,7 +5,7 @@ import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
   return {
-    base: '/firstmind-saas/',
+    base: '/firstmind-saass/',
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
