@@ -313,8 +313,8 @@ class ApiClient {
   }) {
     const isDemo = await this.checkDemoMode();
     if (isDemo) {
-      const GROQ_API_KEY = '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';
-      const GROQ_MODEL = 'qwen/qwen3.8-27b';
+      const GROQ_API_KEY = import.meta.env.VITE_GROQ_API_KEY || '';
+      const GROQ_MODEL = import.meta.env.VITE_GROQ_CHAT_MODEL || 'qwen/qwen3.8-27b';
 
       const systemMsg = payload.systemInstruction
         ? [{ role: 'system', content: payload.systemInstruction }]
