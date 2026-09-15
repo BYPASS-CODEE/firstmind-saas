@@ -2,20 +2,20 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>FIRSTMIND - Redirecting...</title>
+<meta http-equiv="refresh" content="0;url=/firstmind-saass/">
+<title>FIRSTMIND</title>
 <script>
-  // Single Page Apps for GitHub Pages
-  // https://github.com/rafgraph/spa-github-pages
-  var repo = '/firstmind-saass/';
-  var pathSegmentsToKeep = 0;
-
-  var l = window.location;
-  l.replace(
-    l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
-    repo + l.pathname.split('/').slice(1 + pathSegmentsToKeep).join('/').replace(/\/$/, '/') +
-    '?' + l.search.slice(1) +
-    l.hash
-  );
+  (function(l) {
+    var path = l.pathname;
+    if (path.indexOf('/firstmind-saass/') === 0) {
+      path = path.substring('/firstmind-saass/'.length);
+    }
+    if (path && path !== '/' && path !== '/index.html') {
+      l.replace('/firstmind-saass/#' + path);
+    } else {
+      l.replace('/firstmind-saass/');
+    }
+  })(window.location);
 </script>
 </head>
 <body></body>
