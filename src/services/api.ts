@@ -320,7 +320,7 @@ class ApiClient {
         ? [{ role: 'system', content: payload.systemInstruction }]
         : [];
 
-      const resp = await fetch('https://api.groq.com/openai/v1/chat/completions', {
+      const resp = await fetch('https://corsproxy.io/?' + encodeURIComponent('https://api.groq.com/openai/v1/chat/completions'), {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
