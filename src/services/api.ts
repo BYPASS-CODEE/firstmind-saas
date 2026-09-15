@@ -313,16 +313,47 @@ class ApiClient {
   }) {
     const isDemo = await this.checkDemoMode();
     if (isDemo) {
-      const lastMsg = payload.messages[payload.messages.length - 1];
+      const GROQ_API_KEY = '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';
+      const GROQ_MODEL = 'qwen/qwen3.8-27b';
+
+      const systemMsg = payload.systemInstruction
+        ? [{ role: 'system', content: payload.systemInstruction }]
+        : [];
+
+      const resp = await fetch('https://api.groq.com/openai/v1/chat/completions', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${GROQ_API_KEY}`
+        },
+        body: JSON.stringify({
+          model: GROQ_MODEL,
+          messages: [
+            ...systemMsg,
+            ...payload.messages.map(m => ({ role: m.role, content: m.content }))
+          ],
+          temperature: payload.temperature ?? 0.7,
+          max_tokens: 2048
+        })
+      });
+
+      if (!resp.ok) {
+        const errText = await resp.text();
+        throw new ApiError(`Groq API error ${resp.status}: ${errText}`, 'GROQ_ERROR');
+      }
+
+      const data = await resp.json();
+      const content = data.choices?.[0]?.message?.content || 'No response from AI.';
+
       return {
         conversationId: payload.conversationId || generateId('conv'),
         message: {
           role: 'assistant' as const,
-          content: `[Demo Mode] This is a simulated response. In production, your message "${lastMsg.content.slice(0, 50)}..." would be processed by our AI engine.`,
+          content,
           timestamp: new Date().toISOString()
         },
-        model: 'demo-model',
-        provider: 'demo'
+        model: GROQ_MODEL,
+        provider: 'groq'
       };
     }
     return this.request<any>('/api/chat', {
@@ -333,7 +364,7 @@ class ApiClient {
 
   public async getChatStatus() {
     const isDemo = await this.checkDemoMode();
-    if (isDemo) return { provider: 'demo', chatModel: 'demo-chat', isConfigured: false };
+    if (isDemo) return { provider: 'groq', chatModel: 'qwen/qwen3.8-27b', isConfigured: true };
     return this.request<any>('/api/chat/status');
   }
 
