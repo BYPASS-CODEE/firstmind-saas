@@ -60,8 +60,8 @@ export const RegisterView: React.FC<RegisterViewProps> = ({ navigate }) => {
   };
 
   return (
-    <div className="min-h-[calc(100vh-12rem)] flex items-center justify-center py-6 px-4 sm:px-6 lg:px-8">
-      <Card className="max-w-md w-full p-5 sm:p-8 space-y-4 sm:space-y-6 relative">
+    <div className="min-h-screen flex items-center justify-center py-6 px-4 sm:px-6 lg:px-8 overflow-y-auto">
+      <Card className="max-w-md w-full p-5 sm:p-8 space-y-3 sm:space-y-6 relative my-auto">
         {/* Quick Language Toggle */}
         <div className="absolute top-4 end-4">
           <button
@@ -103,7 +103,7 @@ export const RegisterView: React.FC<RegisterViewProps> = ({ navigate }) => {
               value={name}
               onChange={(e) => setName(e.target.value)}
               placeholder={t('fullNamePlaceholder', 'Alex Wright')}
-              className="w-full h-10 px-3 text-sm rounded-lg border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 focus:outline-none focus:ring-2 focus:ring-zinc-400"
+              className="w-full h-9 sm:h-10 px-3 text-sm rounded-lg border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 focus:outline-none focus:ring-2 focus:ring-zinc-400"
             />
           </div>
 
@@ -117,7 +117,7 @@ export const RegisterView: React.FC<RegisterViewProps> = ({ navigate }) => {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               placeholder="alex@studio.com"
-              className="w-full h-10 px-3 text-sm rounded-lg border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 focus:outline-none focus:ring-2 focus:ring-zinc-400"
+              className="w-full h-9 sm:h-10 px-3 text-sm rounded-lg border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 focus:outline-none focus:ring-2 focus:ring-zinc-400"
             />
           </div>
 
@@ -131,7 +131,7 @@ export const RegisterView: React.FC<RegisterViewProps> = ({ navigate }) => {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               placeholder="••••••••"
-              className="w-full h-10 px-3 text-sm rounded-lg border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 focus:outline-none focus:ring-2 focus:ring-zinc-400"
+              className="w-full h-9 sm:h-10 px-3 text-sm rounded-lg border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 focus:outline-none focus:ring-2 focus:ring-zinc-400"
             />
           </div>
 
@@ -145,7 +145,7 @@ export const RegisterView: React.FC<RegisterViewProps> = ({ navigate }) => {
               value={confirmPassword}
               onChange={(e) => setConfirmPassword(e.target.value)}
               placeholder="••••••••"
-              className="w-full h-10 px-3 text-sm rounded-lg border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 focus:outline-none focus:ring-2 focus:ring-zinc-400"
+              className="w-full h-9 sm:h-10 px-3 text-sm rounded-lg border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 focus:outline-none focus:ring-2 focus:ring-zinc-400"
             />
           </div>
 
@@ -159,7 +159,7 @@ export const RegisterView: React.FC<RegisterViewProps> = ({ navigate }) => {
               value={referralCode}
               onChange={(e) => setReferralCode(e.target.value.toUpperCase())}
               placeholder="FM-XXXXXX"
-              className="w-full h-10 px-3 text-sm font-mono uppercase rounded-lg border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 focus:outline-none focus:ring-2 focus:ring-zinc-400"
+              className="w-full h-9 sm:h-10 px-3 text-sm font-mono uppercase rounded-lg border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 focus:outline-none focus:ring-2 focus:ring-zinc-400"
             />
           </div>
 
