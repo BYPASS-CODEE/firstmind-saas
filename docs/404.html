@@ -2,20 +2,17 @@
 <html>
 <head>
 <meta charset="utf-8">
-<meta http-equiv="refresh" content="0;url=/firstmind-saass/">
-<title>FIRSTMIND</title>
 <script>
-  (function(l) {
-    var path = l.pathname;
-    if (path.indexOf('/firstmind-saass/') === 0) {
-      path = path.substring('/firstmind-saass/'.length);
-    }
-    if (path && path !== '/' && path !== '/index.html') {
-      l.replace('/firstmind-saass/#' + path);
-    } else {
-      l.replace('/firstmind-saass/');
-    }
-  })(window.location);
+  // SPA redirect for GitHub Pages - redirects all 404s to index.html
+  var pathSegmentsToKeep = 1;
+  var l = window.location;
+  l.replace(
+    l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+    '/firstmind-saass/' +
+    l.pathname.split('/').slice(1 + pathSegmentsToKeep).join('/').replace(/\/$/, '') +
+    (l.search ? '?' + l.search.slice(1) : '') +
+    l.hash
+  );
 </script>
 </head>
 <body></body>
