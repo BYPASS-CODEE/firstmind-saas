@@ -21,8 +21,8 @@ export const ForgotPasswordView: React.FC<ForgotPasswordViewProps> = ({ navigate
   };
 
   return (
-    <div className="min-h-[calc(100vh-12rem)] flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
-      <Card className="max-w-md w-full p-8 space-y-6 relative">
+    <div className="min-h-[calc(100vh-12rem)] flex items-center justify-center py-6 px-4 sm:px-6 lg:px-8">
+      <Card className="max-w-md w-full p-5 sm:p-8 space-y-4 sm:space-y-6 relative">
         {/* Quick Language Toggle */}
         <div className="absolute top-4 end-4">
           <button
